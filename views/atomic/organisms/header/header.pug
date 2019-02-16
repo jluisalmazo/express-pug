@@ -1,10 +1,16 @@
+link(rel='stylesheet', href='atomic/organisms/header/header.css')
 header
     .main
         .container
             .logo
                 img(src='../../assets/liverpool.svg')
             .search-box
-                input(type='text')
+                //- input.form-control(type='text')
+                .input-group
+                    input.form-control(type='text', placeholder="Buscar", aria-label="Buscar", aria-describedby='basic-addon2')
+                    .input-group-append
+                        button.btn.btn-outline-secondary(type='button') Button
+
             .login
                 ul
                     li Mis pedidos

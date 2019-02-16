@@ -2,8 +2,16 @@ doctype html
 html
     head
         title Liverpool Test
+        link(rel='stylesheet', href='bootstrap/bootstrap.css')
         link(rel='stylesheet', href='global-styles.css')
-        link(rel='stylesheet', href='components/header/header.css')
+        // link(rel='stylesheet', href='components/header/header.css')
+        // link(rel='stylesheet', href='components/common/breadcrumb/breadcrumb.css')
     body
         // h1 #{title}
-        include components/header/header
+        include atomic/organisms/header/header
+        include atomic/molecules/breadcrumb/breadcrumb
+
+        - const tree = [{name: 'Home', href: '#'}, {name: 'Videojuegos', href: '#'}, {name: 'Consolas', href: '#'}, {name: 'XBOX', href: '#'}]
+        +breadcrumb(tree)
+
+

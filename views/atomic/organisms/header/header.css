@@ -16,7 +16,7 @@ header .main {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    padding: 20px 0; }
+    padding: 5px 0; }
     header .main .container .logo {
       width: 10%; }
       header .main .container .logo img {
@@ -24,11 +24,6 @@ header .main {
         height: auto; }
     header .main .container .search-box {
       width: 50%; }
-      header .main .container .search-box input[type=text] {
-        width: calc(100% - 20px);
-        font-size: 1.2rem;
-        color: #38383E;
-        padding: 5px 10px; }
     header .main .container .login {
       width: 20%;
       color: #FFF; }

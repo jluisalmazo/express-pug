@@ -19,6 +19,8 @@ app.use(
     })
 );
 
+app.use('/bootstrap', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
+
 // Home Route
 app.get('/', (req, res) => {    
     res.render('index', {

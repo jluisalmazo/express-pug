@@ -27,7 +27,7 @@ header {
             justify-content: space-around;
             align-items: center;
             width: 100%;
-            padding: 20px 0;
+            padding: 5px 0;
             // height: 100px;
 
             .logo {
@@ -41,12 +41,12 @@ header {
             .search-box {
                 width: 50%;
 
-                input[type=text] {
-                    width: calc(100% - 20px);
-                    font-size: 1.2rem;
-                    color: #38383E;
-                    padding: 5px 10px;
-                }
+                // input[type=text] {
+                //     width: calc(100% - 20px);
+                //     font-size: 1.2rem;
+                //     color: #38383E;
+                //     padding: 5px 10px;
+                // }
             }
             .login {
                 width: 20%;

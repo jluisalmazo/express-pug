@@ -1,0 +1,13 @@
+mixin breadcrumb(tree)
+    link(rel='stylesheet', href='atomic/molecules/breadcrumb/breadcrumb.css')
+    .breadcrumb-container
+        .container
+            nav(aria-label='breadcrumb')
+                ol.breadcrumb
+                    each brand, index in tree
+                        if index < tree.length - 1
+                            li.breadcrumb-item
+                                a(href='#{brand.href}')= brand.name
+                        else
+                            // It's the current page
+                            li.breadcrumb-item.active(aria-current='page')= brand.name
