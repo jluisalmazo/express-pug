@@ -1,0 +1,16 @@
+{
+  "name": "liverpool-test",
+  "version": "1.0.0",
+  "description": "Exámen práctico Front End",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app"
+  },
+  "author": "Juan Luis Almazo",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "node-sass-middleware": "^0.11.0",
+    "pug": "^2.0.3"
+  }
+}
