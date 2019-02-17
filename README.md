@@ -12,7 +12,7 @@ En una Consola / Terminal:
 
 1.- Clonar el repositorio
 
-    git clone https://github.com/JuanCazarez/JuanLuisAlmazo.git
+    git clone https://github.com/jluisalmazo/express-pug.git
 
 2.- Entrar a la carpeta del proyecto clonado
 
