@@ -1,0 +1,14 @@
+.add-to-my-bag {
+  margin-bottom: 20px; }
+  .add-to-my-bag .amount .input-group select {
+    flex: none;
+    width: 80px;
+    outline: none; }
+  .add-to-my-bag .amount .input-group .input-group-append {
+    width: calc(100% - 80px); }
+    .add-to-my-bag .amount .input-group .input-group-append .btn-pink {
+      width: 100%; }
+  .add-to-my-bag #messages {
+    color: #007bff; }
+    .add-to-my-bag #messages.error {
+      color: #F00; }

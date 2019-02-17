@@ -1,0 +1,43 @@
+.product-photogallery {
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .thumbnails {
+        width: 8%;
+        display: flex;
+        flex-flow: column nowrap;
+        flex-direction: column-reverse;
+
+        img {
+            margin-bottom: 10px;
+            cursor: pointer;
+
+            &.selected{
+                border: 1px solid #999;  
+            }
+        }
+
+    }
+
+    .full-size {
+        width: 90%;
+
+        img {
+            opacity: 0;
+            transition: opacity 0.9s linear;
+
+            &.visible {
+                opacity: 1;
+            }
+        }
+
+    }
+}

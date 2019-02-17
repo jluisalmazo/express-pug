@@ -1,0 +1,38 @@
+mixin add-to-my-bag(product)
+
+    link(rel='stylesheet', href='atomic/molecules/add-to-my-bag/add-to-my-bag.css')
+
+    script.
+        function validate() {
+            document.getElementById('messages').innerHTML = '';
+            document.getElementById('messages').classList.remove('error');
+
+            let element = document.getElementById('amount');
+            let amount = element.options[element.selectedIndex].value;
+
+            if(amount > 2) {
+                document.getElementById('messages').innerHTML = amount + ' Productos fueron agregados a su bolsa de compra.';            
+            } else {
+                document.getElementById('messages').innerHTML = 'Por favor, seleccione más de 2 productos.';
+                document.getElementById('messages').classList.add('error');            
+            }
+        }
+
+    .add-to-my-bag
+        .amount
+            .label Cantidad:
+            .input-group
+                select#amount.custom-select
+                    option(value='1', selected) 1
+                    option(value='2') 2
+                    option(value='3') 3
+                    option(value='4') 4
+                    option(value='5') 5
+                    option(value='6') 6
+                    option(value='7') 7
+                    option(value='8') 8
+                    option(value='9') 9
+                    option(value='10') 10
+                .input-group-append
+                    button.btn-pink(type='button', onclick='validate()') Agregar a Mi bolsa
+            #messages 

@@ -1,0 +1,111 @@
+.product-buy {
+
+    .availability {
+        margin-bottom: 10px;
+
+        a {
+            display: block;
+            font-size: .7rem;
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: underline;
+            color: #000;
+        }
+    }
+
+    .buy-in-group {
+        padding-bottom: 15px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #999;
+
+        .label {
+            font-size: 15px;            
+            color: #4c4c4c;
+            margin-bottom: 10px;
+        }
+
+        .product {
+            display: flex;
+            flex-flow: row nowrap;
+
+            .img-container {
+                width: 30%;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            .info {
+                width: 70%;
+
+                .name {
+                    font-size: 13px;
+                    color: #000;
+                    margin-bottom: 10px;                    
+                }
+
+                .originalPrice {
+                    font-size: 12px;
+                    color: #adadad;
+                    text-decoration: line-through;                    
+                    margin-bottom: 10px;                    
+                }
+
+                .discountPrice {
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: #F00;
+                }
+            }
+        }
+    }
+
+    .total {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 13px;
+        color: #1B1B1B;
+        margin-bottom: 20px;
+
+        .price {
+            font-size: 13px;
+            color: #1B1B1B;
+
+            span {
+                font-size: 14px;
+                font-weight: bold;                
+                color: #f00;
+            }
+        }
+    }
+
+    .more {
+        a {
+            display: block;
+            position: relative;
+            width: 115px;
+            font-size: 12px;            
+            color: #e10098;
+            text-decoration: none;
+            margin: 0 auto;
+
+            &:after {
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 30px;
+                height: 100%;
+                font-size: 1rem;
+                content: '\21E3';
+                color: #000;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}

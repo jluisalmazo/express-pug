@@ -1,0 +1,33 @@
+.stars-raiting {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row-reverse; }
+  .stars-raiting input {
+    display: none; }
+  .stars-raiting label {
+    position: relative;
+    display: block;
+    width: 35px;
+    font-family: FontAwesome;
+    font-size: 30px;
+    margin-bottom: 0;
+    cursor: pointer; }
+    .stars-raiting label:before {
+      display: block;
+      content: '\f005';
+      color: #656262; }
+    .stars-raiting label:after {
+      position: absolute;
+      display: block;
+      content: '\f005';
+      color: #F2B72C;
+      top: 0;
+      opacity: 0;
+      transition: .5s;
+      text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); }
+  .stars-raiting label:hover:after,
+  .stars-raiting label:hover ~ label:after,
+  .stars-raiting input:checked ~ label:after {
+    opacity: 1; }

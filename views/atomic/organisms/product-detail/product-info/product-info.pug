@@ -1,0 +1,25 @@
+mixin product-info(product)
+
+    link(rel='stylesheet', href='atomic/organisms/product-detail/product-info/product-info.css')
+    include ../../../molecules/stars-raiting/stars-raiting
+
+    .product-info
+        h1= product.name
+        .code= 'Código de producto: ' + product.code
+        +stars-raiting(5)
+        a.read-opinions(href='#')= 'Leer ' + product.opinionsNumber  + ' opiniones'
+        .price.original= '$' + product.originalPrice
+        .price.discount= '$' + product.discountPrice
+        .sizes 
+            .label Selecciona talla:
+            - let n = 0;
+            each size in product.sizes
+                - n++;
+                if (n === 1)
+                    .size.selected= size
+                else
+                    .size= size
+             
+        .description
+            .label Descripción
+            = product.description      

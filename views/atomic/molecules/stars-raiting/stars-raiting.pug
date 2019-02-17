@@ -1,0 +1,8 @@
+mixin stars-raiting(starsNumber)
+    link(rel='stylesheet', href='atomic/molecules/stars-raiting/stars-raiting.css')
+    .stars-raiting
+        - var n = 1;
+        while n <= starsNumber
+            input(type='radio', name='star', id='star' + n)
+            label(for='star' + n)
+            - n++

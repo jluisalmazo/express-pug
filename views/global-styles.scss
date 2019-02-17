@@ -6,9 +6,41 @@ body {
     font-weight: normal;
 }
 
-
 .container {
     max-width: 1600px;
     margin: 0 auto;
 }
 
+$brand-color: #DF1797;
+
+.btn-pink {
+    position: relative;
+    padding: 5px 20px;
+    font-size: 14px;
+    color: #FFF;
+    background-color: $brand-color;
+    outline: none !important;
+    transition: filter 0.5s ease-in-out;
+
+    &:hover{
+        text-decoration: none !important;
+        filter: brightness(120%);  
+    }
+
+    &.arrow {
+        padding: 5px 30px 5px 20px;
+
+        &:after {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 30px;
+            height: 100%;
+            font-size: 1rem;
+            content: '\276F';
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }    
+}        

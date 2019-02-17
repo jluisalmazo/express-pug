@@ -1,0 +1,14 @@
+mixin product-detail(product, dates)
+
+    link(rel='stylesheet', href='atomic/organisms/product-detail/product-detail.css')
+    include ../../organisms/product-detail/product-photogallery/product-photogallery
+    include ../../organisms/product-detail/product-info/product-info
+    include ../../organisms/product-detail/product-buy/product-buy
+
+    .product-detail
+        .photogallery
+            +product-photogallery(product)
+        .info
+            +product-info(product)
+        .buy
+            +product-buy(product, dates)

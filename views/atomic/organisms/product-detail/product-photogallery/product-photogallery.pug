@@ -1,0 +1,39 @@
+mixin product-photogallery(product)
+
+    link(rel='stylesheet', href='atomic/organisms/product-detail/product-photogallery/product-photogallery.css')
+
+    - let len = product.images.length;
+    script.
+
+        function showFullSizeImg(index) {
+
+            let fullSizeImg = document.getElementById('fullsize-img');
+            let thumb = document.getElementById('thumb_img_' + index);
+            fullSizeImg.classList.remove('visible');
+            fullSizeImg.src = thumb.src;
+
+            let elems = document.getElementsByClassName('selected');
+            [].forEach.call(elems, function(el) {
+                el.classList.remove("selected");
+            });
+
+            thumb.classList.add('selected');
+            fullSizeImg.classList.add('visible');
+        }
+
+        // On document ready, click the first thumb so we can see a default fullsize image.
+        document.addEventListener("DOMContentLoaded", function() {
+            let thumb = document.getElementById('thumb_img_1');
+            thumb.click();
+        });
+
+    .product-photogallery
+        .thumbnails
+            - let n = 1;
+            each image in product.images
+                img(id='thumb_img_' + n, src='' + image, onclick='showFullSizeImg(' + n + ')')
+                - n++
+        .full-size
+            img(id='fullsize-img')
+
+

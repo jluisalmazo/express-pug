@@ -1,0 +1,25 @@
+.product-photogallery {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start; }
+  .product-photogallery img {
+    width: 100%;
+    height: auto; }
+  .product-photogallery .thumbnails {
+    width: 8%;
+    display: flex;
+    flex-flow: column nowrap;
+    flex-direction: column-reverse; }
+    .product-photogallery .thumbnails img {
+      margin-bottom: 10px;
+      cursor: pointer; }
+      .product-photogallery .thumbnails img.selected {
+        border: 1px solid #999; }
+  .product-photogallery .full-size {
+    width: 90%; }
+    .product-photogallery .full-size img {
+      opacity: 0;
+      transition: opacity 0.9s linear; }
+      .product-photogallery .full-size img.visible {
+        opacity: 1; }

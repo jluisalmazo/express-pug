@@ -1,0 +1,38 @@
+mixin product-buy(product, dates)
+
+    link(rel='stylesheet', href='atomic/organisms/product-detail/product-buy/product-buy.css')
+    include ../../../molecules/add-to-my-bag/add-to-my-bag
+
+    - let today = new Date();
+
+    .product-buy
+        .form-group
+            select#deliveryDate.form-control
+                option(selected, disabled) Fecha estimada de entrega:
+                each date in dates
+                    -
+                        // The date to display as each option will be: today + (number in json).
+                        let newDate = new Date();
+                        newDate.setDate(today.getDate() + parseInt(date));
+                        newDateAsString = newDate.getDate() + '-' + (newDate.getMonth()+1) + '-' + newDate.getFullYear();
+                    option= newDateAsString
+
+        .add-to-my-bag
+            +add-to-my-bag()
+        .availability
+            a(href="#") Ver disponibilidad en tienda
+        .buy-in-group
+            .label Compra en grupo:
+            .product
+                .img-container   
+                    img(src='../../assets/tarjeta-xbox.jpg')
+                .info
+                    .name Tarjeta Xbox Live CSV 300 MXN
+                    .originalPrice $299.99
+                    .discountPrice $254.99
+        .total
+            .price Total del grupo: 
+                span $7,238.09
+            button.btn-pink.arrow Agregar grupo
+        .more
+            a(href="#") Más paquetes    

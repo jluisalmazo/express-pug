@@ -1,0 +1,31 @@
+$brand-color: #DF1797;
+
+.add-to-my-bag {
+    margin-bottom: 20px;
+
+    .amount {
+        .input-group {
+            select {
+                flex: none;
+                width: 80px;
+                outline: none;
+            }
+            
+            .input-group-append {
+                width: calc(100% - 80px);
+
+                .btn-pink {
+                    width: 100%;
+                }        
+            }            
+        }
+    }
+
+    #messages {
+        color: #007bff;
+
+        &.error {
+            color: #F00;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.product-detail {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 40px;
+
+    .photogallery {
+        width: 50%;
+    }
+
+    .info {
+        width: 23%;
+    }
+
+    .buy {
+        width: 23%;
+    }
+}

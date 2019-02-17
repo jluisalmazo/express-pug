@@ -1,0 +1,78 @@
+.product-buy .availability {
+  margin-bottom: 10px; }
+  .product-buy .availability a {
+    display: block;
+    font-size: .7rem;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: #000; }
+
+.product-buy .buy-in-group {
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #999; }
+  .product-buy .buy-in-group .label {
+    font-size: 15px;
+    color: #4c4c4c;
+    margin-bottom: 10px; }
+  .product-buy .buy-in-group .product {
+    display: flex;
+    flex-flow: row nowrap; }
+    .product-buy .buy-in-group .product .img-container {
+      width: 30%; }
+      .product-buy .buy-in-group .product .img-container img {
+        width: 100%;
+        height: auto; }
+    .product-buy .buy-in-group .product .info {
+      width: 70%; }
+      .product-buy .buy-in-group .product .info .name {
+        font-size: 13px;
+        color: #000;
+        margin-bottom: 10px; }
+      .product-buy .buy-in-group .product .info .originalPrice {
+        font-size: 12px;
+        color: #adadad;
+        text-decoration: line-through;
+        margin-bottom: 10px; }
+      .product-buy .buy-in-group .product .info .discountPrice {
+        font-size: 14px;
+        font-weight: bold;
+        color: #F00; }
+
+.product-buy .total {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: #1B1B1B;
+  margin-bottom: 20px; }
+  .product-buy .total .price {
+    font-size: 13px;
+    color: #1B1B1B; }
+    .product-buy .total .price span {
+      font-size: 14px;
+      font-weight: bold;
+      color: #f00; }
+
+.product-buy .more a {
+  display: block;
+  position: relative;
+  width: 115px;
+  font-size: 12px;
+  color: #e10098;
+  text-decoration: none;
+  margin: 0 auto; }
+  .product-buy .more a:after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+    height: 100%;
+    font-size: 1rem;
+    content: '\21E3';
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center; }

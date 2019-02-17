@@ -4,14 +4,20 @@ html
         title Liverpool Test
         link(rel='stylesheet', href='bootstrap/bootstrap.css')
         link(rel='stylesheet', href='global-styles.css')
-        // link(rel='stylesheet', href='components/header/header.css')
-        // link(rel='stylesheet', href='components/common/breadcrumb/breadcrumb.css')
+        link(rel='stylesheet', href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
     body
         // h1 #{title}
-        include atomic/organisms/header/header
         include atomic/molecules/breadcrumb/breadcrumb
+        include atomic/organisms/header/header
+        include atomic/organisms/product-detail/product-detail
 
-        - const tree = [{name: 'Home', href: '#'}, {name: 'Videojuegos', href: '#'}, {name: 'Consolas', href: '#'}, {name: 'XBOX', href: '#'}]
+        - const tree = [{name: 'Home', href: '#'}, {name: 'Videojuegos', href: '#'}, {name: 'Consolas', href: '#'}, {name: 'XBOX', href: '#'}];
         +breadcrumb(tree)
 
+        .container
+            -
+                const product = {code: '1077730776', name: 'Consola Xbox One S 1 TB + Fortnite + Gears of War 4', originalPrice: '7,759.00', discountPrice: '6,983.10',
+                                 sizes: ['1 TB', '2 TB'], opinionsNumber: 5, description: 'Lucha en Battle Royale de 100 jugadores de modo cuerpo a cuerpo en un mapa gigante, la construcción y la destrucción del medio ambiente a medida que avanzas',
+                                 images: ['assets/product-1/product-img-1.jpg', 'assets/product-1/product-img-2.jpg', 'assets/product-1/product-img-3.jpg', 'assets/product-1/product-img-4.jpg']};
+            +product-detail(product, deliveryDates)
 
