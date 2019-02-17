@@ -6,7 +6,7 @@ https://docs.google.com/document/d/1SZXNhOmerEsBUCzNgHmRTnyEHweH9uYg2QktAmxu0AE/
 
 
 
-# Pasos para probar la aplicación de prueba de manera local:
+# Pasos para probar la aplicación de manera local:
 
 En una Consola / Terminal:
 
@@ -33,7 +33,8 @@ Cuando el servidor esté listo, aparecerá el mensaje: “Server started on port
 6.- LISTO.
 
 
-NOTA:
+
+# NOTAS:
 
 La aplicación fue desarrollada con:
 
