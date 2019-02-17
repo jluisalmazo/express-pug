@@ -7,6 +7,7 @@ header {
 
         li {
             float: left;
+            cursor: pointer;
 
             &.divider {
                 width: 1px;
@@ -72,11 +73,20 @@ header {
                 }
     
                 .bag {
+                    position: relative;
                     margin-left: 50px;
 
                     img {
                         width: auto;
                         height: 50px;
+                    }
+
+                    .items {
+                        position: absolute;
+                        width: 100%;
+                        text-align: center;
+                        color: $brand-color;
+                        bottom: 7px;
                     }
                 }
             }

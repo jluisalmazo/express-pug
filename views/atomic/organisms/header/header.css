@@ -1,7 +1,8 @@
 header ul {
   list-style-type: none; }
   header ul li {
-    float: left; }
+    float: left;
+    cursor: pointer; }
     header ul li.divider {
       width: 1px;
       height: 20px;
@@ -40,10 +41,17 @@ header .main {
       header .main .container .login-bag .login {
         color: #FFF; }
       header .main .container .login-bag .bag {
+        position: relative;
         margin-left: 50px; }
         header .main .container .login-bag .bag img {
           width: auto;
           height: 50px; }
+        header .main .container .login-bag .bag .items {
+          position: absolute;
+          width: 100%;
+          text-align: center;
+          color: #DF1797;
+          bottom: 7px; }
 
 header nav {
   background-color: #F8F8F8; }

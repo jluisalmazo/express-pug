@@ -1,4 +1,4 @@
-mixin breadcrumb(tree)
+mixin breadcrumb(path)
     
     link(rel='stylesheet', href='atomic/molecules/breadcrumb/breadcrumb.css')
 
@@ -6,10 +6,10 @@ mixin breadcrumb(tree)
         .container
             nav(aria-label='breadcrumb')
                 ol.breadcrumb
-                    each brand, index in tree
-                        if index < tree.length - 1
+                    each page, index in path
+                        if index < path.length - 1
                             li.breadcrumb-item
-                                a(href=brand.href)= brand.name
+                                a(href=page.href)= page.name
                         else
                             // It's the current page
-                            li.breadcrumb-item.active(aria-current='page')= brand.name
+                            li.breadcrumb-item.active(aria-current='page')= page.name
