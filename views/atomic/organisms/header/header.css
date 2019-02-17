@@ -1,5 +1,7 @@
 header ul {
-  list-style-type: none; }
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
   header ul li {
     float: left;
     cursor: pointer; }
@@ -25,7 +27,8 @@ header .main {
       justify-content: space-between;
       align-items: center; }
       header .main .container .logo-search-box .logo {
-        width: 15%; }
+        width: 15%;
+        cursor: pointer; }
         header .main .container .logo-search-box .logo img {
           width: 100%;
           height: auto; }
@@ -42,7 +45,8 @@ header .main {
         color: #FFF; }
       header .main .container .login-bag .bag {
         position: relative;
-        margin-left: 50px; }
+        margin-left: 50px;
+        cursor: pointer; }
         header .main .container .login-bag .bag img {
           width: auto;
           height: 50px; }
@@ -103,4 +107,8 @@ header nav {
       width: 80%;
       margin-bottom: 20px; }
     header .main .container .logo-search-box .search-box {
-      width: 100%; } }
+      width: 100%; }
+  header nav .container li {
+    font-size: 12px; }
+    header nav .container li.divider {
+      margin: 0 7px; } }

@@ -4,6 +4,8 @@ header {
 
     ul {
         list-style-type: none;
+        margin: 0;
+        padding: 0;
 
         li {
             float: left;
@@ -17,7 +19,6 @@ header {
             }
         }
     }
-
 
     .main {
         background-color: $brand-color;
@@ -40,6 +41,7 @@ header {
 
                 .logo {
                     width: 15%;
+                    cursor: pointer;
     
                     img {
                         width: 100%;
@@ -75,6 +77,7 @@ header {
                 .bag {
                     position: relative;
                     margin-left: 50px;
+                    cursor: pointer;
 
                     img {
                         width: auto;
@@ -90,7 +93,6 @@ header {
                     }
                 }
             }
-
         }
     }
 
@@ -176,7 +178,6 @@ header {
             }
         }
     }
-
 }
 
 @media only screen and (max-width: 600px) {
@@ -193,6 +194,18 @@ header {
 
                     .search-box {
                         width: 100%;
+                    }
+                }
+            }
+        }
+
+        nav {
+            .container {
+                li {
+                    font-size: 12px;
+
+                    &.divider {
+                        margin: 0 7px;
                     }
                 }
             }
