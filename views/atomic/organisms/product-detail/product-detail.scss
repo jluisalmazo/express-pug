@@ -17,3 +17,32 @@
         width: 23%;
     }
 }
+
+@media only screen and (max-width: 1000px) {
+
+    .product-detail {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 40px;
+    
+        .photogallery {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    
+        .info {
+            width: 100%;
+            margin-bottom: 50px;
+            padding-bottom: 50px;
+            border-bottom: 1px solid #EEE;
+        }
+
+        .buy {
+            width: 100%;
+            margin-bottom: 50px;
+        }
+    }
+
+}

@@ -17,24 +17,36 @@ header .main {
     align-items: center;
     width: 100%;
     padding: 5px 0; }
-    header .main .container .logo {
-      width: 10%; }
-      header .main .container .logo img {
-        width: 100%;
-        height: auto; }
-    header .main .container .search-box {
-      width: 50%; }
-    header .main .container .login {
-      width: 20%;
-      color: #FFF; }
-    header .main .container .bag img {
-      width: auto;
-      height: 50px; }
+    header .main .container .logo-search-box {
+      width: 70%;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center; }
+      header .main .container .logo-search-box .logo {
+        width: 15%; }
+        header .main .container .logo-search-box .logo img {
+          width: 100%;
+          height: auto; }
+      header .main .container .logo-search-box .search-box {
+        width: 75%; }
+        header .main .container .logo-search-box .search-box .input-group .input-group-append .btn-magnifying-glass:after {
+          content: '\1F50D'; }
+    header .main .container .login-bag {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-around;
+      align-items: center; }
+      header .main .container .login-bag .login {
+        color: #FFF; }
+      header .main .container .login-bag .bag {
+        margin-left: 50px; }
+        header .main .container .login-bag .bag img {
+          width: auto;
+          height: 50px; }
 
 header nav {
-  background-color: #F6F6F6; }
-  header nav .divider {
-    border-right: 1px solid #D7D7D7; }
+  background-color: #F8F8F8; }
   header nav .container {
     display: flex;
     flex-flow: row nowrap;
@@ -42,6 +54,8 @@ header nav {
     align-items: center;
     padding: 20px 0;
     border-bottom: 1px solid #D7D7D7; }
+    header nav .container .divider {
+      border-right: 1px solid #999; }
     header nav .container .primary {
       font-size: .9rem;
       color: #38383E; }
@@ -50,3 +64,35 @@ header nav {
     header nav .container .secondary {
       font-size: .8rem;
       color: #8D8D8D; }
+
+@media only screen and (max-width: 1300px) {
+  header .main .container .logo-search-box {
+    width: 60%; }
+    header .main .container .logo-search-box .logo {
+      width: 20%; } }
+
+@media only screen and (max-width: 1000px) {
+  header .main .container {
+    flex-direction: column; }
+    header .main .container .logo-search-box {
+      width: 90%;
+      margin-top: 20px;
+      margin-bottom: 20px; }
+      header .main .container .logo-search-box .logo {
+        width: 20%; }
+    header .main .container .login-bag {
+      justify-content: center;
+      width: 100%; }
+  header nav .container {
+    flex-flow: column nowrap; }
+    header nav .container .primary {
+      margin-bottom: 20px; } }
+
+@media only screen and (max-width: 600px) {
+  header .main .container .logo-search-box {
+    flex-direction: column; }
+    header .main .container .logo-search-box .logo {
+      width: 80%;
+      margin-bottom: 20px; }
+    header .main .container .logo-search-box .search-box {
+      width: 100%; } }

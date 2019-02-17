@@ -12,14 +12,13 @@ mixin product-info(product)
         .price.discount= '$' + product.discountPrice
         .sizes 
             .label Selecciona talla:
-            - let n = 0;
+            - let n = 1;
             each size in product.sizes
-                - n++;
-                if (n === 1)
+                if(n === 1)
                     .size.selected= size
-                else
+                else     
                     .size= size
-             
+                - n++    
         .description
             .label Descripción
             = product.description      

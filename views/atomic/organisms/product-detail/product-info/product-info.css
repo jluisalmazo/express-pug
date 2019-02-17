@@ -28,7 +28,7 @@
   .product-info .sizes {
     color: #666;
     font-size: 13px;
-    margin-bottom: 20px; }
+    margin-bottom: 40px; }
     .product-info .sizes .label {
       text-transform: uppercase;
       margin-bottom: 10px; }
@@ -39,7 +39,7 @@
       text-align: center;
       margin-bottom: 10px; }
       .product-info .sizes .size.selected {
-        border: 1px solid red; }
+        border: 1px solid #999; }
   .product-info .description {
     font-size: 15px;
     color: #3b3b3b; }

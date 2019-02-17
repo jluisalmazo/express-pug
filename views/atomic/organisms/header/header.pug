@@ -1,41 +1,45 @@
-link(rel='stylesheet', href='atomic/organisms/header/header.css')
-header
-    .main
-        .container
-            .logo
-                img(src='../../assets/liverpool.svg')
-            .search-box
-                //- input.form-control(type='text')
-                .input-group
-                    input.form-control(type='text', placeholder="Buscar", aria-label="Buscar", aria-describedby='basic-addon2')
-                    .input-group-append
-                        button.btn.btn-outline-secondary(type='button') Button
+mixin header()
 
-            .login
-                ul
-                    li Mis pedidos
-                    li.divider
-                    li Iniciar sesi&oacute;n
+    link(rel='stylesheet', href='atomic/organisms/header/header.css')
 
-            .bag
-                img(src='../../assets/bag.jpg')
+    header
+        .main
+            .container
+                .logo-search-box
+                    .logo
+                        img(src='../../assets/liverpool.svg')
+                    .search-box
+                        .input-group
+                            input.form-control(type='text', placeholder="Buscar", aria-label="Buscar", aria-describedby='basic-addon2')
+                            .input-group-append
+                                button.btn-magnifying-glass(type='button')
 
-    nav
-        .container
-            .primary
-                ul
-                    li Departamentos
-                    li.divider
-                    li Mesa de regalos
-                    li.divider
-                    li Mi cr&eacute;dito
-                    li.divider
-                    li Seguros
-                    li.divider
-            .secondary
-                ul
-                    li Sorteos y Concursos
-                    li.divider
-                    li Ayuda
-                    li.divider
-                    li Tiendas
+                .login-bag
+                    .login
+                        ul
+                            li Mis pedidos
+                            li.divider
+                            li Iniciar sesi&oacute;n
+
+                    .bag
+                        img(src='../../assets/bag.jpg')
+
+        nav
+            .container
+                .primary
+                    ul
+                        li Departamentos
+                        li.divider
+                        li Mesa de regalos
+                        li.divider
+                        li Mi cr&eacute;dito
+                        li.divider
+                        li Seguros
+                        li.divider
+                .secondary
+                    ul
+                        li Sorteos y Concursos
+                        li.divider
+                        li Ayuda
+                        li.divider
+                        li Tiendas

@@ -1,3 +1,10 @@
-.breadcrumb-container,
-.breadcrumb {
+.breadcrumb-container {
   background-color: #F5F5F5; }
+  .breadcrumb-container .breadcrumb {
+    font-size: 14px;
+    background-color: #F5F5F5; }
+    .breadcrumb-container .breadcrumb li {
+      color: #DF1797; }
+      .breadcrumb-container .breadcrumb li a {
+        font-size: 11px;
+        color: #666; }
